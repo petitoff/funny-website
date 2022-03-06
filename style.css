@@ -1,0 +1,20 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.time {
+  font-size: 5ch;
+  text-align: left;
+}
+
+#a {
+  position: relative;
+  bottom: 40px;
+}
+
+#aa {
+  position: relative;
+  bottom: 20px;
+}
