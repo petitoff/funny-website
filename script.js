@@ -10,4 +10,7 @@ function updateClock() {
     hours + minutes + seconds;
 }
 
-const timeInterval = setInterval(updateClock, 1000);
+let interval = async () => {
+  setInterval(updateClock, 1000);
+};
+interval();

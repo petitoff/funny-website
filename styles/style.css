@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: #12181b;
   color: white;
   font-family: "Courier New", Courier, monospace;
 }
@@ -7,25 +7,30 @@ a {
   text-decoration: none;
   color: black;
 }
-.time {
+
+#clock {
+  height: 300px;
+}
+
+#time {
+  margin-top: 30px;
   font-size: 5ch;
   text-align: left;
+  height: 4ch;
 }
 
-#a {
-  position: relative;
-  bottom: 40px;
-}
-
-#aa {
-  position: relative;
-  bottom: 20px;
-}
-
-#b {
+#smalText {
   font-size: 20px;
   position: relative;
   right: 10px;
+}
+
+#smalerText {
+  font-size: 15px;
+}
+
+#tictactoe {
+  margin-top: auto;
 }
 
 #tictactoe button {
