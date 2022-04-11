@@ -24,10 +24,6 @@ body {
 }
 
 /* Chat Area CSS Code */
-.test {
-  color: red;
-}
-
 .chat-area header {
   display: flex;
   align-items: center;
