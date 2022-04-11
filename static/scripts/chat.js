@@ -1,9 +1,8 @@
-// const mgToUser = "Testowy";
-const node = document.getElementsByClassName("inputMessage")[0];
-node.addEventListener("keyup", function (event) {
+const getMessageFromUser = document.getElementById("inputMessage");
+getMessageFromUser.addEventListener("keyup", function (event) {
   if (event.key === "Enter") {
-    const userMessage = document.getElementById("inputMessage").value;
-    document.getElementById("inputMessage").value = "";
+    const userMessage = document.getElementById("inputMessage").value; // Retrieving messages from the user
+    document.getElementById("inputMessage").value = ""; // Clearing the input from the user
 
     document
       .getElementById("chatbot_sender")
