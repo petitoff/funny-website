@@ -1,3 +1,4 @@
+const allMessageFromUser = [];
 const getMessageFromUser = document.getElementById("inputMessage");
 const btn1 = document.querySelector(".button");
 
