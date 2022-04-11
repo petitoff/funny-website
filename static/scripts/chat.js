@@ -10,6 +10,7 @@ const scrollDownChat = function () {
 const event1 = function (event) {
   if (event.key === "Enter" || event == "[object PointerEvent]") {
     const userMessage = document.getElementById("inputMessage").value; // Retrieving messages from the user
+    if (userMessage.trim() == "") return;
     allMessageFromUser.push(userMessage);
     document.getElementById("inputMessage").value = ""; // Clearing the input from the user
 
