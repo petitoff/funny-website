@@ -24,7 +24,7 @@ btn1.addEventListener("click", event1);
 
 function responseFromBot() {
   const messageFromUser = allMessageFromUser[allMessageFromUser.length - 1];
-  const botMessageToUser = messageFromUser;
+  const botMessageToUser = messageFromUser; // Test code. Currently, the bot is sending the same message that it received from the user
   document
     .getElementById("chatbot_sender")
     .insertAdjacentHTML(
