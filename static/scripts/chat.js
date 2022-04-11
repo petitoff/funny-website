@@ -21,3 +21,14 @@ const event1 = function (event) {
 
 getMessageFromUser.addEventListener("keyup", event1);
 btn1.addEventListener("click", event1);
+
+function responseFromBot() {
+  const messageFromUser = allMessageFromUser[allMessageFromUser.length - 1];
+  const botMessageToUser = messageFromUser;
+  document
+    .getElementById("chatbot_sender")
+    .insertAdjacentHTML(
+      "beforeend",
+      `<div class="chat incoming"><div class="details"><p> ${botMessageToUser} </p></div></div>`
+    );
+}
