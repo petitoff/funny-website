@@ -7,6 +7,21 @@ const scrollDownChat = function () {
   elements[elements.length - 1].scrollIntoView();
 };
 
+const animationDivMovForBotMessage = function (botMessageToUser) {
+  setTimeout(function () {
+    document
+      .getElementById("chatbot_sender")
+      .insertAdjacentHTML(
+        "beforeend",
+        `<div class="animation-div-mov chat incoming"><div class="details"><p> ${botMessageToUser} </p></div></div>`
+      );
+    scrollDownChat();
+
+    const animation1 = document.querySelectorAll(".animation-div-mov");
+    animation1[animation1.length - 1].classList.add("move");
+  }, 1000);
+};
+
 const messageFromUser = function (event) {
   if (event.key === "Enter" || event == "[object PointerEvent]") {
     const userMessage = document.getElementById("inputMessage").value; // Retrieving messages from the user
