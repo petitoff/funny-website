@@ -64,12 +64,13 @@ const responseFromBotInnerHtml = function (botMessageToUser) {
 };
 
 function botBrain(messageFromUser) {
-  messageFromUser = messageFromUser.trim().toLowerCase();
-  if (messageFromUser == "help") {
-    return helpCommand();
-  } else if (messageFromUser == "funny") {
-    return funnyCommand();
-  }
+  messageFromUser = messageFromUser.trim().toLowerCase(); // remove whitespace and change all letter to lower case
+
+  // check if message is command
+  if (messageFromUser == "help") return helpCommand();
+  else if (messageFromUser == "funny") return funnyCommand();
+
+  // if not try to find message in bot dictionary
   return pattern[messageFromUser] ?? errorMessage.noReplyToThisMessage;
 }
 
