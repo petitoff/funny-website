@@ -16,6 +16,10 @@ body {
   padding: 0 10px;
 }
 
+body::-webkit-scrollbar {
+  width: 0; /* width of the entire scrollbar */
+}
+
 .wrapper {
   background-color: #688696;
   max-width: 450px;
