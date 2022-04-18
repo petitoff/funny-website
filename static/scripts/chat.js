@@ -30,6 +30,13 @@ btn1.addEventListener("click", messageFromUser);
 
 const responseFromBot = function () {
   const messageFromUser = allMessageFromUser[allMessageFromUser.length - 1];
+  const botMessageToUser =
+    pattern[messageFromUser] ?? errorMessage.noReplyToThisMessage;
+
+  responseFromBotInnerHtml(botMessageToUser);
+};
+
+const responseFromBotInnerHtml = function (botMessageToUser) {
   document
     .getElementById("chatbot_sender")
     .insertAdjacentHTML(
@@ -37,4 +44,4 @@ const responseFromBot = function () {
       `<div class="chat incoming"><div class="details"><p> ${botMessageToUser} </p></div></div>`
     );
   scrollDownChat();
-}
+};
