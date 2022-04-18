@@ -151,7 +151,7 @@ body {
 
 .animation-div-mov {
   /* height: 100px; */
-  padding-top: 30px;
+  /* padding-top: 30px; */
   transform: translate(0, 0);
   transition: transform 500ms;
 }
