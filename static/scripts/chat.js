@@ -36,7 +36,7 @@ const messageFromUser = function (event) {
         `<div class="chat outgoing"><div class="details"><p> ${userMessage} </p></div></div>`
       );
     scrollDownChat();
-    setTimeout(responseFromBot, 1000);
+    responseFromBot();
   }
 };
 
