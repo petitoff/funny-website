@@ -21,6 +21,7 @@ body::-webkit-scrollbar {
 }
 
 .wrapper {
+  transform: scale(0.9); /* Equal to scaleX(0.7) scaleY(0.7) */
   background-color: #688696;
   max-width: 450px;
   width: 100%;
