@@ -7,7 +7,7 @@ const scrollDownChat = function () {
   elements[elements.length - 1].scrollIntoView();
 };
 
-const event1 = function (event) {
+const messageFromUser = function (event) {
   if (event.key === "Enter" || event == "[object PointerEvent]") {
     const userMessage = document.getElementById("inputMessage").value; // Retrieving messages from the user
     if (userMessage.trim() == "") return;
@@ -25,12 +25,11 @@ const event1 = function (event) {
   }
 };
 
-getMessageFromUser.addEventListener("keyup", event1);
-btn1.addEventListener("click", event1);
+getMessageFromUser.addEventListener("keyup", messageFromUser);
+btn1.addEventListener("click", messageFromUser);
 
-function responseFromBot() {
+const responseFromBot = function () {
   const messageFromUser = allMessageFromUser[allMessageFromUser.length - 1];
-  const botMessageToUser = messageFromUser; // Test code. Currently, the bot is sending the same message that it received from the user
   document
     .getElementById("chatbot_sender")
     .insertAdjacentHTML(
