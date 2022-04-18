@@ -6,6 +6,7 @@
   text-decoration: none;
   font-family: "Poppins", sans-serif;
 }
+
 body {
   display: flex;
   align-items: center;
@@ -14,6 +15,7 @@ body {
   background-color: #12181b;
   padding: 0 10px;
 }
+
 .wrapper {
   background-color: #688696;
   max-width: 450px;
@@ -29,10 +31,12 @@ body {
   align-items: center;
   padding: 18px 30px;
 }
+
 .chat-area header .details span {
   font-size: 17px;
   font-weight: 501;
 }
+
 .chat-area header .details p {
   font-size: 14px;
 }
@@ -81,29 +85,35 @@ body {
   color: #fff;
   border-radius: 18px 18px 0 18px;
 }
+
 .chat-box .incoming {
   display: flex;
   align-items: flex-end;
 }
+
 .chat-box .incoming img {
   height: 35px;
   width: 35px;
 }
+
 .chat-box .incoming .details {
   margin-right: auto;
   margin-left: 10px;
   max-width: calc(100% - 130px);
 }
+
 .incoming .details p {
   background: #fff;
   color: #333;
   border-radius: 18px 18px 18px 0;
 }
+
 .typing-area {
   padding: 18px 30px;
   display: flex;
   justify-content: space-between;
 }
+
 .typing-area input {
   height: 45px;
   width: calc(100% - 58px);
