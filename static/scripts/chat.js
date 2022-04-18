@@ -52,11 +52,15 @@ const responseFromBot = function () {
 };
 
 const responseFromBotInnerHtml = function (botMessageToUser) {
-  document
-    .getElementById("chatbot_sender")
-    .insertAdjacentHTML(
-      "beforeend",
-      `<div class="chat incoming"><div class="details"><p> ${botMessageToUser} </p></div></div>`
-    );
-  scrollDownChat();
+  setTimeout(function () {
+    document
+      .getElementById("chatbot_sender")
+      .insertAdjacentHTML(
+        "beforeend",
+        `<div class="chat incoming"><div class="details"><p> ${botMessageToUser} </p></div></div>`
+      );
+    scrollDownChat();
+  }, 1000);
+};
+
 };
