@@ -138,3 +138,14 @@ body {
   background-color: #fff;
   transition: 0.1s;
 }
+
+.animation-div-mov {
+  /* height: 100px; */
+  padding-top: 30px;
+  transform: translate(0, 0);
+  transition: transform 500ms;
+}
+
+.animation-div-mov.move {
+  transform: translate(0, -10px);
+}
