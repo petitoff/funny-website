@@ -64,11 +64,13 @@ const responseFromBotInnerHtml = function (botMessageToUser) {
 };
 
 function botBrain(messageFromUser) {
-  if (messageFromUser.trim().toLowerCase() == "help") {
+  messageFromUser = messageFromUser.trim().toLowerCase();
+  if (messageFromUser == "help") {
     return helpCommand();
+  } else if (messageFromUser == "funny") {
+    return funnyCommand();
   }
   return pattern[messageFromUser] ?? errorMessage.noReplyToThisMessage;
-  return undefined;
 }
 
 const helpCommand = function () {
