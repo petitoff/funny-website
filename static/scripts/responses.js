@@ -5,5 +5,5 @@ const errorMessage = {
 
 const pattern = {
   welcomeMessage: "Try to type: help",
-  hej: "hej",
+  hello: "hey",
 };
