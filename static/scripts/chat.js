@@ -63,4 +63,19 @@ const responseFromBotInnerHtml = function (botMessageToUser) {
   }, 1000);
 };
 
+function botBrain(messageFromUser) {
+  if (messageFromUser.trim().toLowerCase() == "help") {
+    return helpCommand();
+  }
+  return pattern[messageFromUser] ?? errorMessage.noReplyToThisMessage;
+  return undefined;
+}
+
+const helpCommand = function () {
+  animationDivMovForBotMessage("You can: ");
+  animationDivMovForBotMessage("Go to another page! Type: funny ");
+  animationDivMovForBotMessage("Try to hack this page! Type: hack ");
+  animationDivMovForBotMessage("Try to find hidden things!");
+
+  // responseFromBotInnerHtml("You can: ");
 };
