@@ -84,7 +84,7 @@ const helpCommand = function () {
 };
 
 const funnyCommand = function () {
-  animationDivMovForBotMessage("Ołkej! We are going to new galaxy....!");
+  animationDivMovForBotMessage("Ołkej! We are going to the new galaxy....!");
 
   setTimeout(function () {
     window.location.href = "hidden/funny.html";
