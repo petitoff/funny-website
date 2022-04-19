@@ -3,11 +3,10 @@ const errorMessage = {
   noReplyToThisMessage: "I don't understand that yet",
 };
 
-const messageToUser = {
-  
-}
+const messageToUser = {};
 
 const pattern = {
   welcomeMessage: "Try to type: help",
   hello: "hey",
+  name: "Petitoff",
 };
