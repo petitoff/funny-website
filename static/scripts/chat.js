@@ -67,7 +67,6 @@ function botBrain(messageFromUser) {
   messageFromUser = messageFromUser.trim().toLowerCase(); // remove whitespace and change all letter to lower case
 
   const punctuationMark = ["?", "!", "."];
-
   for (const n of punctuationMark) {
     messageFromUser = messageFromUser.replaceAll(n, "");
   }
