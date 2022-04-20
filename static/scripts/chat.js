@@ -66,7 +66,11 @@ const responseFromBotInnerHtml = function (botMessageToUser) {
 function botBrain(messageFromUser) {
   messageFromUser = messageFromUser.trim().toLowerCase(); // remove whitespace and change all letter to lower case
 
-  
+  const punctuationMark = ["?", "!", "."];
+
+  for (const n of punctuationMark) {
+    messageFromUser = messageFromUser.replaceAll(n, "");
+  }
 
   // check if message is command
   if (messageFromUser == "help") return helpCommand();
