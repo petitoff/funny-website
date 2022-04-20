@@ -85,10 +85,10 @@ function botBrain(messageFromUser) {
 }
 
 const helpCommand = function () {
-  animationDivMovForBotMessage("You can: ");
-  animationDivMovForBotMessage("Go to another page! Type: funny ");
-  animationDivMovForBotMessage("Try to hack this page! Type: hack ");
-  animationDivMovForBotMessage("Try to find hidden things!");
+  animationDivMovForBotMessage(messageToUser.helpCommandOptions[0]);
+  animationDivMovForBotMessage(messageToUser.helpCommandOptions[1]);
+  animationDivMovForBotMessage(messageToUser.helpCommandOptions[2]);
+  animationDivMovForBotMessage(messageToUser.helpCommandOptions[3]);
 
   // responseFromBotInnerHtml("You can: ");
 };
