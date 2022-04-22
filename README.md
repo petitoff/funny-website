@@ -12,4 +12,4 @@ The site has various riddles and games. Many elements are hidden. Also in the so
 ## Dev
 You can check the development version. Be warned, however, that this version is a beta version and may contain bugs and stability deficiencies. I encourage you to look for bugs and send them to me via pull requests.
 
-You can play [here](https://funny-website.netlify.app/)!
+You can check [here](https://funny-website.netlify.app/)!
