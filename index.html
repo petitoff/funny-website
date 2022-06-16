@@ -1,36 +1,49 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Funny Website</title>
-    <link rel="stylesheet" href="styles/style.css" />
+
+    <link rel="stylesheet" href="static/css/home.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
   </head>
   <body>
-    <div id="clock">
-      <div id="clockHeader">
-        <h1>Zegar</h1>
-        <p>
-          Zawsze zastanawiało mnie dlaczego kobiety podają wiek swojego bombelka
-          w miesiącach. Dlatego dla zrozumienia jak dziwne to jest stworzyłem
-          zegar podający godzinę w sekundach jakie minęły od północy.
-        </p>
-      </div>
-      <div>
-        <div id="time">
-          Godzina: <span class="clocksecond">00000</span>
-          <span id="smalText">sekund po północy</span>
-        <p id="smalerText">Od razu łatwiej :)</p>
-      </div>
-      <hr />
+    <div class="wrapper">
+      <section class="chat-area">
+        <header>
+          <img src="#" alt="" />
+          <div class="details">
+            <span>*******</span>
+            <p>Active</p>
+          </div>
+        </header>
+        <div class="chat-box" id="chatbot_sender"></div>
+        <!-- <form class="typing-area" autocomplete="off""> -->
+        <div class="typing-area">
+          <input
+            type="text"
+            class="inputMessage"
+            id="inputMessage"
+            name="inputMessage"
+            placeholder="Send a message"
+          />
+          <button class="button">
+            <i id=" telegram" class="fab fa-telegram-plane"></i>
+          </button>
+        </div>
+        <!-- </form> -->
+      </section>
     </div>
 
-    <div id="tictactoe">
-      <h1>Kółko i krzyżyk</h1>
-      <button onclick="window.location.href='tictactoe.html'">Zagraj</button>
-      <p>Gramy gramy! Czasownik... nie, że jednostka wagi 😹</p>
-    </div>
-    <script src="script.js"></script>
+    <!-- SCRIPT -->
+    <script src="static/scripts/responses.js"></script>
+    <script src="static/scripts/chat.js"></script>
+    <script src="static/scripts/welcomeMessage.js"></script>
   </body>
 </html>
