@@ -72,7 +72,7 @@ function botBrain(messageFromUser) {
     messageFromUser = messageFromUser.replaceAll(n, "");
   }
 
-  // check if message is command
+  // check if the message is a command
   if (messageFromUser == "help") return helpCommand();
   else if (messageFromUser == "funny") return funnyCommand();
 
