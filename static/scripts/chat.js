@@ -86,12 +86,9 @@ function botBrain(messageFromUser) {
 }
 
 const helpCommand = function () {
-  animationDivMovForBotMessage(messageToUser.helpCommandOptions[0]);
-  animationDivMovForBotMessage(messageToUser.helpCommandOptions[1]);
-  animationDivMovForBotMessage(messageToUser.helpCommandOptions[2]);
-  animationDivMovForBotMessage(messageToUser.helpCommandOptions[3]);
-
-  // responseFromBotInnerHtml("You can: ");
+  for (const item of messageToUser.helpCommandOptions) {
+    animationDivMovForBotMessage(item);
+  }
 };
 
 const funnyCommand = function () {
