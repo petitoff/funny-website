@@ -3,6 +3,7 @@ const getMessageFromUser = document.getElementById("inputMessage");
 const btn1 = document.querySelector(".button");
 
 const scrollDownChat = function () {
+  // Scrolling chat to see the latest message
   const elements = document.getElementsByClassName("details");
   elements[elements.length - 1].scrollIntoView();
 };
