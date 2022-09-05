@@ -75,10 +75,21 @@ function botBrain(messageFromUser) {
   // check if the message is a command
   if (messageFromUser == "help") return helpCommand();
   else if (messageFromUser == "funny") return funnyCommand();
+  else if (messageFromUser == "hack") return hackCommand();
+
+  // check if the message is a hack
+  const result = hackingLoginSystem(messageFromUser);
+  if (result) return result;
 
   // check if word is in dictionary
   for (const word of messageFromUser.split(" ")) {
-    if (word in pattern) return pattern[word];
+    if (word in pattern) {
+      const response = pattern[word];
+      //specialActionWithResponse(response);
+
+      setTimeout(specialActionWithResponse, 1200, response);
+      return pattern[word];
+    }
   }
 
   // if not send error message to user
@@ -97,4 +108,27 @@ const funnyCommand = function () {
   setTimeout(function () {
     window.location.href = "hidden/funny.html";
   }, 2000);
+};
+
+const hackCommand = function () {
+  animationDivMovForBotMessage("Try to hack me!");
+};
+
+const specialActionWithResponse = function (response) {
+  if (response == "Petitoff") {
+    // if user ask for name, add name to heading of chat window (replace star)
+    document
+      .getElementById("title-chat-name")
+      .classList.add("animation-div-mov");
+    document.getElementById("title-chat-name").textContent = "Petitoff";
+  }
+};
+
+const hackingLoginSystem = (messageFromUser) => {
+  // hacking section
+  const loginCommand = ["admin"];
+  if (loginCommand.includes(messageFromUser)) {
+    return "What is the password?";
+  }
+  return null;
 };
